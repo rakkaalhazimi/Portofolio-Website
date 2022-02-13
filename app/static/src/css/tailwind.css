@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+section {
+    @apply w-full block overflow-hidden
+}
+
+.wrapper {
+    @apply mx-10 sm:mx-20 md:mx-36 lg:mx-44 mt-10 mb-48 relative
+}
+
+@layer components {
+    .diamond-clip {
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+}

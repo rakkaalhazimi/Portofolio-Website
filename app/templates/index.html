@@ -2,8 +2,8 @@
 
 {% block content %}
 <!-- Landing Page -->
-<section id="landing-page" class="w-full block overflow-hidden bg-primary">
-  <div id="landing-wrap" class="mx-10 sm:mx-20 md:mx-36 my-10 relative">
+<section id="landing-page" class="bg-primary">
+  <div id="landing-wrap" class="wrapper relative">
     <div id="logo" class="mb-36 flex flex-row">
       <div id="web-logo" class="text-gray-50">
         <h3 class="align-middle">Alhazimi</h3>
@@ -32,7 +32,7 @@
       </div>
     </div>
     
-    <div id="label" class="mb-36">
+    <div id="label" class="mb-44">
       <div id="label-name" class=" text-gray-50">
         <p class="text-secondary">Rakka Alhazimi</p>
         <h1 class="w-64 text-4xl relative z-10">Data Scientist & Web Developer</h1>
@@ -42,7 +42,8 @@
       </div>
       <div id="vector-diamond"
            class="w-44 h-44 transform rotate-45 absolute left-1/2 sm:left-3/4 bottom-1/4 z-0 bg-secondary"
-           ></div>
+           >
+      </div>
     </div>
   
     <div id="page-nav" class="mx-auto text-gray-50 text-m">
@@ -57,42 +58,65 @@
 </section>
 <!-- End Landing Page -->
 
+<!-- About Me Page -->
+<section id="about-page" class="bg-primary">
+  <div id="about-wrap" class="wrapper relative">
+    <div id="profile" class="mb-10 text-center text-gray-50">
+      <div id="picture" class="flex">
+        <img class="mx-auto diamond-clip w-44 h-44" src="{{ url_for('static', filename='images/foto bagus.jpg') }}">
+      </div>
+      <p class="text-secondary">Rakka Alhazimi</p>
+      <h2 class="text-2xl">Data Scientist, Web Developer</h2>
+    </div>
+    <div id="desc" class="text-center text-gray-50">
+      <p>Proficient python programmer who focused on machine learning and able to create end-to-end
+        data science web applications using specifics web frameworks.</p>
+    </div>
+    </div>
+  </div>
+</section>
+<!-- End About Me Page -->
+
 <!-- Skill Page -->
 <section id="skill-page" class="bg-indigo-800 text-gray-50">
   <h1>Specialization</h1>
-  <div id="data-science-skill">
-    <p>Data Science</p>
-    <h1>Machine Learning and Data Analysis</h1>
-    <div class="skill-group">
-      <ul>
-        <li>
-          <p>Text and Audio Processing</p>
-        </li>
-        <li>
-          <p>Deep Learning</p>
-        </li>
-        <li>
-          <p>Analytics Dashboard</p>
-        </li>
-      </ul>
+  <div id="skill-wrap">
+
+    <div id="data-science-skill">
+      <p>Data Science</p>
+      <h1>Machine Learning and Data Analysis</h1>
+      <div class="skill-group">
+        <ul>
+          <li>
+            <p>Text and Audio Processing</p>
+          </li>
+          <li>
+            <p>Deep Learning</p>
+          </li>
+          <li>
+            <p>Analytics Dashboard</p>
+          </li>
+        </ul>
+      </div>
     </div>
-  </div>
-  <div id="web-development-skill">
-    <p>Web Development</p>
-    <h1>Web Applications and API</h1>
-    <div class="skill-group">
-      <ul>
-        <li>
-          <p>Web Framework Utilization</p>
-        </li>
-        <li>
-          <p>Create and Using API</p>
-        </li>
-        <li>
-          <p>Cloud Deployment</p>
-        </li>
-      </ul>
+    <div id="web-development-skill">
+      <p>Web Development</p>
+      <h1>Web Applications and API</h1>
+      <div class="skill-group">
+        <ul>
+          <li>
+            <p>Web Framework Utilization</p>
+          </li>
+          <li>
+            <p>Create and Using API</p>
+          </li>
+          <li>
+            <p>Cloud Deployment</p>
+          </li>
+        </ul>
+      </div>
     </div>
+    
   </div>
 
 </section>
