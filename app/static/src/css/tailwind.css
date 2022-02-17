@@ -23,7 +23,7 @@ h4 {
 }
 
 .wrapper {
-    @apply mx-10 sm:mx-20 md:mx-36 lg:mx-44 mt-10 mb-48 relative
+    @apply mx-10 sm:mx-20 md:mx-36 lg:mx-44 mt-10 mb-48 relative text-gray-50
 }
 
 .service-type {

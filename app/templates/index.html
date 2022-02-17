@@ -3,7 +3,7 @@
 {% block content %}
 <!-- Landing Page -->
 <section id="landing-page" class="bg-primary">
-  <div id="landing-wrap" class="wrapper relative">
+  <div id="landing-wrap" class="wrapper">
     <div id="logo" class="mb-36 flex flex-row">
       <div id="web-logo" class="text-gray-50">
         <h3 class="align-middle">Alhazimi</h3>
@@ -33,7 +33,7 @@
     </div>
     
     <div id="label" class="mb-44">
-      <div id="label-name" class=" text-gray-50">
+      <div id="label-name" class="">
         <p class="text-secondary">Rakka Alhazimi</p>
         <h1 class="w-64 relative z-10">Data Scientist & Web Developer</h1>
       </div>
@@ -46,11 +46,10 @@
       </div>
     </div>
   
-    <div id="page-nav" class="mx-auto text-gray-50 text-m">
+    <div id="page-nav" class="mx-auto text-m">
       <ul class="flex flex-row gap-x-6 justify-start sm:justify-center">
         <li><a class="nav-link" href="#">About Me</a></li>
-        <li><a class="nav-link" href="#">Technologies</a></li>
-        <li><a class="nav-link" href="#">Specialization</a></li>
+        <li><a class="nav-link" href="#">Services</a></li>
         <li><a class="nav-link" href="#">Projects</a></li>
       </ul>
     </div>
@@ -60,8 +59,8 @@
 
 <!-- About Me Page -->
 <section id="about-page" class="bg-primary">
-  <div id="about-wrap" class="wrapper relative">
-    <div id="profile" class="mb-10 text-center text-gray-50">
+  <div id="about-wrap" class="wrapper">
+    <div id="profile" class="mb-10 text-center">
       <div id="profile-picture" class="flex justify-center items-center gap-x-5">
         <!-- <div id="vector-diamond-profile"
         class="diamond-clip w-12 h-12 bg-secondary"
@@ -87,7 +86,7 @@
 
 <!-- Service Page -->
 <section id="service-page" class="bg-primary">
-  <div id="service-wrap" class="wrapper relative text-gray-50">
+  <div id="service-wrap" class="wrapper">
     
     <div id="service-ds" class="mb-10 text-center">
       <p class="text-secondary">Services</p>
@@ -132,6 +131,12 @@
 
 </section>
 <!-- End Service Page -->
+
+<!-- Projects Page -->
+<section id="projects-page" class="bg-primary">
+  <div id="projects-wrap" class="wrapper"></div>
+</section>
+<!-- End Projects Page -->
 
 
 {% endblock content %}
