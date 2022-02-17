@@ -27,15 +27,33 @@ h4 {
 }
 
 .service-type {
-    @apply w-64 h-64 p-3 bg-tertiary
+    @apply w-64 h-64 p-5 bg-tertiary hover:bg-tertiary_accent
 }
 
+
+
 .btn-download {
-    @apply w-44 p-2 text-gray-50 font-semibold bg-tertiary hover:bg-gray-50 hover:text-tertiary transition duration-300 ease-in-out
+    @apply w-44 p-2 text-gray-50 font-semibold bg-tertiary 
+        hover:bg-gray-50 hover:text-tertiary 
+        transition duration-300 ease-in-out
+}
+
+.nav-link {
+    @apply border-secondary border-opacity-0 
+            hover:border-opacity-100 hover:border-b-2 hover:pb-4 
+            transition duration-300 ease-in
 }
 
 @layer components {
     .diamond-clip {
         clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    }
+
+    .service-type > img {
+        margin-top: 0.5rem;
+        margin-bottom: 1.75rem;
+        margin-left: auto;
+        margin-right: auto;
+        filter: invert(83%) sepia(51%) saturate(0%) hue-rotate(17deg) brightness(111%) contrast(101%);
     }
 }

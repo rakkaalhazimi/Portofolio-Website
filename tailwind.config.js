@@ -13,6 +13,8 @@ module.exports = {
         primary: '#292828',
         secondary: '#cb6ce6',
         tertiary: '#5d17ad',
+        tertiary_accent: '#42107A'
+
       }
     }
   },

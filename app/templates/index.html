@@ -48,10 +48,10 @@
   
     <div id="page-nav" class="mx-auto text-gray-50 text-m">
       <ul class="flex flex-row gap-x-6 justify-start sm:justify-center">
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Technologies</a></li>
-        <li><a href="#">Specialization</a></li>
-        <li><a href="#">Projects</a></li>
+        <li><a class="nav-link" href="#">About Me</a></li>
+        <li><a class="nav-link" href="#">Technologies</a></li>
+        <li><a class="nav-link" href="#">Specialization</a></li>
+        <li><a class="nav-link" href="#">Projects</a></li>
       </ul>
     </div>
   </div>
@@ -95,26 +95,32 @@
 
       <div id="service-types-wrap" class="flex flex-row flex-wrap justify-center gap-7 text-left">
         <div class="service-type">
+          <img src="{{ url_for('static', filename='images/machine-learning.png') }}">
           <h4 class="mb-1">Machine Learning</h4>
           <p class="text-sm">Build machine learning system starts from data collections until model deployment.</p>
         </div>
         <div class="service-type">
+          <img src="{{ url_for('static', filename='images/big-data.png') }}">
           <h4 class="mb-1">Big Data</h4>
           <p class="text-sm">Utilizing big data tools to perform large size data preprocessing for analysis and machine learning.</p>
         </div>
         <div class="service-type">
+          <img src="{{ url_for('static', filename='images/data-analysis.png') }}">
           <h4 class="mb-1">Data Analysis</h4>
           <p class="text-sm">Gathering insight from data using statistical method like descriptive and inferential to foster bussiness decisions.</p>
         </div>
         <div class="service-type">
+          <img src="{{ url_for('static', filename='images/web-development.png') }}">
           <h4 class="mb-1">Web Development</h4>
           <p class="text-sm">Create, manage and styling website using specifics frameworks.</p>
         </div>
         <div class="service-type">
+          <img src="{{ url_for('static', filename='images/browser-automation.png') }}">
           <h4 class="mb-1">Browser Automation</h4>
           <p class="text-sm">Automate non trivial and repetitive task on website by using python script.</p>
         </div>
         <div class="service-type">
+          <img src="{{ url_for('static', filename='images/cloud.png') }}">
           <h4 class="mb-1">Cloud Computing</h4>
           <p class="text-sm">Make a use of cloud computing to host an application, train machine learning model and create database server.</p>
         </div>
