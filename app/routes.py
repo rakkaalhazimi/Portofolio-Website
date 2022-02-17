@@ -1,4 +1,5 @@
 import os, sys
+import platform
 import datetime as dt
 from flask import (
     render_template,
@@ -19,3 +20,7 @@ from app.models import *
 @app.route('/')
 def index():
     return render_template('index.html')
+
+@app.route('/platform')
+def get_platform_name():
+    return platform.system()
