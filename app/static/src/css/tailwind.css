@@ -30,6 +30,10 @@ h4 {
     @apply w-64 h-64 p-3 bg-tertiary
 }
 
+.btn-download {
+    @apply w-44 p-2 text-gray-50 font-semibold bg-tertiary hover:bg-gray-50 hover:text-tertiary transition duration-300 ease-in-out
+}
+
 @layer components {
     .diamond-clip {
         clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
