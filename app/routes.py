@@ -24,3 +24,7 @@ def index():
 @app.route('/platform')
 def get_platform_name():
     return platform.system()
+
+@app.route('/env')
+def get_env():
+    return app.config["ENV"]
