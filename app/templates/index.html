@@ -138,45 +138,21 @@
     <p class="text-secondary">Projects</p>
     <h2 class="mb-14">Works by Me</h2>
     <div id="projects-panel" class="grid grid-cols-3 gap-x-5 gap-y-5">
+      {% for project in projects %}
+        <div class="projects-type">
+          <div class="projects-type-header">
+            <img src="{{ url_for('static', filename='images/{}'.format(project.icon_path)) }}"><p>{{ project.title }}</p>
+          </div>
+          <div class="projects-type-image">
+            <img src="{{ url_for('static', filename='images/{}'.format(project.image_path)) }}">
+          </div>
+          <div class="projects-type-descriptions">
+            <p class="mb-3">{{ project.description }}</p>
+            <a href="{{ project.title }}"><button class="btn-projects my-auto">Link</button></a>
+          </div>
+        </div>
+      {% endfor %}
 
-      <div class="projects-type">
-        <div class="projects-type-header">
-          <img src="{{ url_for('static', filename='images/github.png') }}"><p>Projects Name</p>
-        </div>
-        <div class="projects-type-image">
-          <img src="{{ url_for('static', filename='images/foto bagus.jpg')}}">
-        </div>
-        <div class="projects-type-descriptions">
-          <p class="mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis porro qui illum nulla.</p>
-          <a><button class="btn-projects my-auto">Link</button></a>
-        </div>
-      </div>
-
-      <div class="projects-type">
-        <div class="projects-type-header">
-          <img src="{{ url_for('static', filename='images/github.png') }}"><p>Projects Name</p>
-        </div>
-        <div class="projects-type-image">
-          <img src="{{ url_for('static', filename='images/foto bagus.jpg')}}">
-        </div>
-        <div class="projects-type-descriptions">
-          <p class="mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis porro qui illum nulla.</p>
-          <a><button class="btn-projects my-auto">Link</button></a>
-        </div>
-      </div>
-
-      <div class="projects-type">
-        <div class="projects-type-header">
-          <img src="{{ url_for('static', filename='images/github.png') }}"><p>Projects Name</p>
-        </div>
-        <div class="projects-type-image">
-          <img src="{{ url_for('static', filename='images/foto bagus.jpg')}}">
-        </div>
-        <div class="projects-type-descriptions">
-          <p class="mb-3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis porro qui illum nulla.</p>
-          <a class="mt-auto"><button class="btn-projects">Link</button></a>
-        </div>
-      </div>
 
     </div>
   </div>
