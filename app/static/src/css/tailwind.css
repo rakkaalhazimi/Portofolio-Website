@@ -38,10 +38,27 @@ h4 {
         transition duration-300 ease-in-out
 }
 
+.btn-projects {
+    @apply w-12 p-1 text-gray-50 bg-tertiary
+}
+
 .nav-link {
     @apply border-secondary border-opacity-0 
             hover:border-opacity-100 hover:border-b-2 hover:pb-4 
             transition duration-300 ease-in
+}
+
+
+.projects-type {
+    @apply relative grid grid-cols-1
+}
+
+.projects-type-header {
+    @apply flex flex-row gap-x-2 items-center mb-2
+}
+
+.projects-type-descriptions {
+    @apply w-auto h-full flex flex-col
 }
 
 @layer components {
