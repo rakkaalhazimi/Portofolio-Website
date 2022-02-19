@@ -3,7 +3,10 @@ import os
 class Config(object):
     DEBUG = False
     TESTING = False
-    DATABASE_URI = 'sqlite:///:memory:'
+    BASE_DIR = os.path.dirname(__file__)
+    DATABASE = os.path.join(BASE_DIR, "app/main.db")
+    SQLALCHEMY_DATABASE_URI = f'sqlite:///{DATABASE}'
+    SQLALCHEMY_TRACK_MODIFICATIONS = False
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'jdlfjds7834kjfksdfhdsds'
 
 class ProductionConfig(Config):

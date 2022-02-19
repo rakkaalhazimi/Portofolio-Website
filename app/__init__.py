@@ -1,7 +1,9 @@
 import os
 from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
+db = SQLAlchemy(app)
 
 # Import configuration profile based on FLASK_ENV variable - defaults to Production
 if os.environ.get('FLASK_ENV') == 'development':
