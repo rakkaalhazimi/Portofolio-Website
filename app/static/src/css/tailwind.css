@@ -49,18 +49,6 @@ h4 {
 }
 
 
-.projects-type {
-    @apply relative grid grid-cols-1
-}
-
-.projects-type-header {
-    @apply flex flex-row gap-x-2 items-center mb-2
-}
-
-.projects-type-descriptions {
-    @apply w-auto h-full flex flex-col
-}
-
 @layer components {
     .diamond-clip {
         clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
@@ -72,5 +60,10 @@ h4 {
         margin-left: auto;
         margin-right: auto;
         filter: invert(83%) sepia(51%) saturate(0%) hue-rotate(17deg) brightness(111%) contrast(101%);
+    }
+
+    .projects-type {
+        display: grid;
+        grid-template-rows: 50px auto auto;
     }
 }
