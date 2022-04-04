@@ -146,12 +146,12 @@
       {% for project in projects %}
         <div class="projects-type">
           <div id="projects-type-header" class="flex flex-row gap-x-2 items-center mb-2">
-            <img src="{{ url_for('static', filename='images/{}'.format(project.icon_path)) }}" class="w-9 h-auto">
-            <p>{{ project.title }}</p>
+            <img src="{{ project.icon_link }}" class="w-9 h-auto">
+            <p>{{ project.project_name }}</p>
           </div>
           <div class="projects-type-image">
-            <a href="{{ project.url }}" target="_blank">
-              <img src="{{ url_for('static', filename='images/{}'.format(project.image_path)) }}">
+            <a href="{{ project.project_link }}" target="_blank">
+              <img src="{{ project.thumbnail_link }}">
             </a>
           </div>
           <div id="projects-type-descriptions" class="w-auto h-full flex flex-col">
