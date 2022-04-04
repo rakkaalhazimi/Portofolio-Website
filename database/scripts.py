@@ -1,3 +1,5 @@
+from dotenv import load_dotenv
+load_dotenv()
 from app import db
 from app.models import *
 
@@ -17,6 +19,11 @@ def add_data(title, url, image_path, icon_path, description):
 def update_data(filter_dict, update_dict):
     db.session.query(Projects).filter(filter_dict).update(update_dict)
     db.session.commit()
+
+
+def delete_data(filter_dict):
+    db.session.query(Projects).filter().delete()
+    
 
 
 if __name__ == "__main__":
